@@ -1,0 +1,33 @@
+html
+  head
+    title register
+    style.
+      html, body { width: 100%; height: 100%; }
+      #content {
+      width: 70%;
+      height: 70%;
+      margin: 10%;
+      text-align: center;
+      float: left;
+      background : rgba(240, 240,240);
+      }
+  body
+    #container
+      #content
+        br
+        br
+        h1 Register
+        br
+        form(action='register_process', method='post')
+          h2
+            | ID : 
+            input(type='text',name = 'id')
+          h2
+            | PW : 
+            input(type='password', name = 'pw')
+          br
+          input(type='submit', value='register')
+        br
+        a(href='/') home
+        br
+        br
